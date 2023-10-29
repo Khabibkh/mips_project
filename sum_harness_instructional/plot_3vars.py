@@ -64,11 +64,14 @@ def plot_data(metric):
     plt.legend()
     plt.grid(True)
     plt.xscale('log')
+
+    plt.savefig(f"{metric}_plot.png")
+
+
     plt.show()
 
 
 plot_data("MFLOPs")
-
 
 plot_data("Mem_Bandwidth")
 
