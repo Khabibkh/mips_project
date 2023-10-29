@@ -10,7 +10,6 @@ void setup(int64_t N, uint64_t A[])
 {
     printf("Inside direct_sum problem_setup, N=%lld \n", N);
 
-    // a random number generator to fill A
     std::random_device rd;
     std::mt19937_64 generator(rd());
     std::uniform_int_distribution<uint64_t> distribution(0, UINT64_MAX);
